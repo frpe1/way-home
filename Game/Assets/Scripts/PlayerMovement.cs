@@ -34,7 +34,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
-        controller.Move(moveDirection * Time.deltaTime);
 
+        controller.Move(moveDirection * Time.deltaTime);  
+
+    }
+
+    private void FixedUpdate() {
+        
+              
     }
 }
